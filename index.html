@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="" class="btn1">button 1 </a>
+    <a href="" class="btn2">button 2</a></br>
+    <input id="ip1" type="text"></br>
+    <input id="ip2" type="text">
+</body>
+<script>
+    $(".btn1").click(function(){
+       var ip1 = $("#ip1").val();
+       $(this).attr("href","http://localhost:8000/index/home/"+ip1);
+    });
+    $(".btn2").click(function(){
+       var ip2 = $("#ip2").val();
+       $(this).attr("href","http://localhost:8000/index/user/"+ip2);
+    });
+</script>
+</html>
